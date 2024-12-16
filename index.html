@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESSFAR Incubateur : Application Web de prédiction des notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Titre principal aligné à gauche -->
+    <h1 style="text-align: left;">ESSFAR Incubateur : Application Web de prédiction des notes</h1>
+    
+    <!-- Phrase pour le formulaire -->
+    <p style="font-weight: normal; text-align: left;">Fiche de collecte des notes des étudiants</p>
+
+    <!-- Formulaire -->
+    <form>
+        <label for="nom">Nom de l’étudiant :</label>
+        <input type="text" id="nom" name="nom"><br><br>
+
+        <label for="dateNaissance">Date de naissance :</label>
+        <input type="text" id="dateNaissance" name="dateNaissance" placeholder="jj/mm/aaaa"><br><br>
+
+        <label>Sexe :</label>
+        <input type="radio" id="feminin" name="sexe" value="F">
+        <label for="feminin">F</label>
+        <input type="radio" id="masculin" name="sexe" value="M">
+        <label for="masculin">M</label><br><br>
+
+        <label for="matiere">Matière :</label>
+        <select id="matiere" name="matiere">
+            <option value="Machine Learning" selected>Machine Learning</option>
+            <option value="DevOps">DevOps</option>
+            <option value="Statistique">Statistique</option>
+            <option value="Assurance">Assurance</option>
+            <option value="Anglais">Anglais</option>
+        </select><br><br>
+
+        <label for="note">Note :</label>
+        <input type="number" id="note" name="note"><br><br>
+
+        <!-- Boutons Valider et Réinitialiser -->
+        <button type="submit" style="padding: 5px 15px;">Valider</button>
+        <button type="reset" style="padding: 5px 15px;">Réinitialiser</button>
+    </form>
+
+    <br>
+    <!-- Lien vers la page des prédictions -->
+    <a href="results.html">Cliquez pour voir la page de prédiction</a><br>
+
+    <!-- Logo ESSFAR -->
+    <img src="logo_essfar.png" alt="Logo ESSFAR" style="width: 100px; margin-top: 10px;">
+</body>
+</html>
